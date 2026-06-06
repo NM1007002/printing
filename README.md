@@ -2,7 +2,7 @@
 
 A professional, mobile-friendly website for a local printing business in Gesini, KuGompo City, South Africa.
 
-![Website Preview](https://via.placeholder.com/800x400?text=Arise+%26+Shine+Printing)
+![Website Preview](https://printing-3u1.pages.dev/)
 
 ---
 
@@ -42,10 +42,12 @@ A professional, mobile-friendly website for a local printing business in Gesini,
 
 ## 🚀 Deployment
 
-This website is deployed using **Cloudflare** (Cloudflared).
+This website is deployed using **Cloudflare Pages**.
 
-### Deployment Method
+### Live URL
 
-```bash
-# Website is static HTML/CSS
-# Deployed via Cloudflare Tunnel (cloudflared)
+> **Website:** [https://printing-3u1.pages.dev/](https://printing-3u1.pages.dev/)
+
+---
+
+## 📂 Project Structure
