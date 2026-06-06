@@ -229,6 +229,43 @@
             background: #128C7E;
         }
 
+        /* Agency Link Styles */
+        .agency-link {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0 20px 20px 20px;
+            border-radius: 16px;
+        }
+
+        .agency-link p {
+            color: white;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .agency-link a {
+            display: inline-block;
+            background: white;
+            color: #764ba2;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .agency-link a:hover {
+            transform: scale(1.05);
+        }
+
+        .agency-link small {
+            color: rgba(255,255,255,0.8);
+            margin-top: 10px;
+            font-size: 0.7rem;
+            display: block;
+        }
+
         @media (max-width: 600px) {
             .header h1 {
                 font-size: 1.8rem;
@@ -299,7 +336,6 @@
                     🗺️ Open in Google Maps
                 </a>
 
-                <!-- Tutorial: How to use coordinates (Option 3 removed) -->
                 <div class="tutorial">
                     <h4>📖 How to find us using coordinates</h4>
                     <p><strong>Option 1: Google Maps (Easiest)</strong></p>
@@ -318,6 +354,15 @@
                     
                     <p>💡 <strong>Pro tip:</strong> Save our coordinates in your phone contacts as "Arise & Shine Location" for easy access next time!</p>
                 </div>
+            </div>
+
+            <!-- Link to Tarn Kcura Agency -->
+            <div class="agency-link">
+                <p>🌟 Also visit my other business</p>
+                <a href="https://tarnkcuraagency.pages.dev/" target="_blank">
+                    🏢 Tarn Kcura Agency →
+                </a>
+                <small>Professional Agency Services</small>
             </div>
 
             <div class="footer">
