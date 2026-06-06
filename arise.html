@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arise & Shine Printing | Gesini, KuGompo City</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+            color: #ffffff;
+        }
+
+        .header .tagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            color: #ffffff;
+        }
+
+        .whatsapp-badge {
+            background: #25D366;
+            display: inline-block;
+            padding: 8px 20px;
+            border-radius: 50px;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .whatsapp-only {
+            background: #1e2a3a;
+            color: #f39c12;
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .hours {
+            background: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .hours span {
+            color: #f39c12;
+        }
+
+        .price-table {
+            padding: 20px;
+        }
+
+        .price-table h2 {
+            color: #2c3e50;
+            border-left: 5px solid #f39c12;
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            text-align: left;
+            background: #f8f9fa;
+            color: #2c3e50;
+        }
+
+        td:last-child {
+            text-align: right;
+            font-weight: bold;
+            color: #e67e22;
+            font-size: 1.2rem;
+        }
+
+        .service-row:hover {
+            background: #fef9e6;
+        }
+
+        .info-section {
+            padding: 20px;
+            background: #f8f9fa;
+            border-top: 1px solid #eee;
+        }
+
+        .info-section h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .info-section p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .coordinates-section {
+            background: linear-gradient(135deg, #1e2a3a 0%, #2c3e50 100%);
+            padding: 20px;
+            border-radius: 16px;
+            margin-top: 10px;
+        }
+
+        .coordinates-section h3 {
+            color: #f39c12;
+            margin-bottom: 10px;
+        }
+
+        .coordinates {
+            background: #00000030;
+            padding: 12px;
+            border-radius: 10px;
+            font-family: monospace;
+            font-size: 1.1rem;
+            text-align: center;
+            letter-spacing: 1px;
+            margin: 10px 0;
+            color: #f5f5f5;
+        }
+
+        .tutorial {
+            background: #fef9e6;
+            border-left: 4px solid #f39c12;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        .tutorial h4 {
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+
+        .tutorial ol, .tutorial ul {
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .tutorial li {
+            margin-bottom: 8px;
+        }
+
+        .map-link {
+            display: inline-block;
+            background: #f39c12;
+            color: #1e2a3a;
+            padding: 10px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: transform 0.2s;
+        }
+
+        .map-link:hover {
+            transform: scale(1.02);
+            background: #e67e22;
+            color: #ffffff;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+
+        .whatsapp-btn {
+            display: block;
+            background: #25D366;
+            color: #ffffff;
+            text-align: center;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 20px;
+            transition: transform 0.2s;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.02);
+            background: #128C7E;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            td:last-child {
+                font-size: 1rem;
+            }
+            .coordinates {
+                font-size: 0.9rem;
+                word-break: break-all;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">
+                <h1>🌟 ARISE & SHINE</h1>
+                <div class="tagline">Printing Services</div>
+                <div class="whatsapp-badge">📱 WhatsApp: 067 822 4611</div>
+                <div class="whatsapp-only">⚠️ WhatsApp only – no calls please</div>
+            </div>
+
+            <div class="hours">
+                🕒 Open Daily: <span>09:00 – 19:00</span> (7 days a week)
+            </div>
+
+            <div class="price-table">
+                <h2>💰 Price List</h2>
+                <table>
+                    <thead>
+                        <tr><th>Service</th><th>Price</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr class="service-row"><td>🖨️ Black & White Copy</td><td>R1.50</td></tr>
+                        <tr class="service-row"><td>🎨 Colour Copy</td><td>R3.00</td></tr>
+                        <tr class="service-row"><td>📄 Black & White Print</td><td>R4.00</td></tr>
+                        <tr class="service-row"><td>🌈 Colour Print</td><td>R6.00</td></tr>
+                        <tr class="service-row"><td>🔍 Scanning (per page)</td><td>R1.00</td></tr>
+                        <tr class="service-row"><td>🪪 ID Copy</td><td>R2.00</td></tr>
+                        <tr class="service-row"><td>🖼️ Photo / Advert (Colour)</td><td>R7.00</td></tr>
+                        <tr class="service-row"><td>⚫ Photo / Advert (B&W)</td><td>R3.50</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <a href="https://wa.me/27678224611" class="whatsapp-btn" target="_blank">
+                📲 Order via WhatsApp Only
+            </a>
+
+            <div class="info-section">
+                <h3>📍 How to Order</h3>
+                <p>✅ Send your document via <strong>WhatsApp to 067 822 4611</strong> (WhatsApp only)</p>
+                <p>✅ Bring your USB stick to our location</p>
+                <p>✅ Walk in anytime <strong>09:00 – 19:00</strong></p>
+                <p>💰 Payment: Cash or SnapScan</p>
+            </div>
+
+            <!-- GPS Coordinates Section -->
+            <div class="coordinates-section">
+                <h3>📍 GPS Coordinates</h3>
+                <div class="coordinates">
+                    🌐 33°00'57.3"S 27°51'48.5"E
+                </div>
+                
+                <a href="https://www.google.com/maps?q=33.01591666666667,27.86347222222222" class="map-link" target="_blank">
+                    🗺️ Open in Google Maps
+                </a>
+
+                <!-- Tutorial: How to use coordinates (Option 3 removed) -->
+                <div class="tutorial">
+                    <h4>📖 How to find us using coordinates</h4>
+                    <p><strong>Option 1: Google Maps (Easiest)</strong></p>
+                    <ol>
+                        <li>Copy this: <strong>33.01591666666667, 27.86347222222222</strong></li>
+                        <li>Open <strong>Google Maps</strong> on your phone</li>
+                        <li>Paste into the search bar and tap search</li>
+                        <li>You'll see our exact location!</li>
+                    </ol>
+                    
+                    <p><strong>Option 2: Direct click</strong></p>
+                    <ul>
+                        <li>Click the <strong>"Open in Google Maps"</strong> button above</li>
+                        <li>It will open maps with our location ready</li>
+                    </ul>
+                    
+                    <p>💡 <strong>Pro tip:</strong> Save our coordinates in your phone contacts as "Arise & Shine Location" for easy access next time!</p>
+                </div>
+            </div>
+
+            <div class="footer">
+                Arise & Shine Printing Services – Quality prints from your local community shop
+            </div>
+        </div>
+    </div>
+</body>
+</html>
